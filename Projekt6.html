@@ -2,148 +2,114 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Tablica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marginesy i Padding w CSS</title>
     <style>
-        table, th, td {
-            border: 1px solid black;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
             border-collapse: collapse;
-            padding: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        
+        .padding-example td {
+            padding: 15px;
+        }
+
+       
+        .double-margin {
+            margin: 30px 20px;
+        }
+
+       
+        .triple-margin {
+            margin: 40px auto 20px; 
+        }
+
+        
+        .quad-margin {
+            margin: 10px 15px 20px 25px; 
+        }
+
+        
+        .specific-margins {
+            margin-top: 10px;     
+            margin-right: 15px;    
+            margin-bottom: 20px;  
+            margin-left: 25px;    
         }
     </style>
 </head>
 <body>
-    <h1>Zadanie 1 (Tablica z Rowspan)</h1>
-    <table>
+
+    <h2>Zadanie 1: Podstawowe marginesy wewnętrzne</h2>
+    <table class="padding-example">
         <tr>
-            <td rowspan="2">Rowspan 2</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
         </tr>
         <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
         </tr>
     </table>
 
-    <h1>Zadanie 2 (Tablica z Colspan)</h1>
-    <table>
+    <h2>Zadanie 2: Zapis Podwójny Marginesu</h2>
+    <table class="double-margin">
         <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
         </tr>
         <tr>
-            <td>komórka</td>
-            <td colspan="2">colspan 2</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
         </tr>
     </table>
 
-    <h1>Zadanie 3 (Tablica z Rowspan i Colspan)</h1>
-    <table>
+    <h2>Zadanie 3: Zapis Potrójny Marginesu</h2>
+    <table class="triple-margin">
         <tr>
-            <td colspan="2">Colspan 2</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
         </tr>
         <tr>
-            <td rowspan="2">Rowspan 2</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
         </tr>
     </table>
 
-    <h1>Zadanie 4 (Tablica z Nagłówkami)</h1>
-    <table>
+    <h2>Zadanie 4: Zapis Poczwórny Marginesu</h2>
+    <table class="quad-margin">
         <tr>
-            <th rowspan="2">Produkt</th>
-            <th colspan="2">Cena</th>
-            <th rowspan="2">Ilość</th>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
         </tr>
         <tr>
-            <th>Netto</th>
-            <th>Brutto</th>
-        </tr>
-        <tr>
-            <td>Jabłka</td>
-            <td>3 PLN</td>
-            <td>3.69 PLN</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Pomarańcze</td>
-            <td>5 PLN</td>
-            <td>6.15 PLN</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>Banany</td>
-            <td>4 PLN</td>
-            <td>4.92 PLN</td>
-            <td>12</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
         </tr>
     </table>
 
-    <h1>Zadanie 5 (Zaawansowana Tablica)</h1>
-    <table>
+    <h2>Zadanie 5: Marginesy Dla Wybranych Stron</h2>
+    <table class="specific-margins">
         <tr>
-            <td colspan="3">Colspan 3</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
         </tr>
         <tr>
-            <td rowspan="2">Rowspan 2</td>
-            <td colspan="2">Colspan 2</td>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td colspan="3">Colspan 3</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td colspan="2">Colspan 2</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-        </tr>
-        <tr>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
-            <td>komórka</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
         </tr>
     </table>
+
 </body>
 </html>
