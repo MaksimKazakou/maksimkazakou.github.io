@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+}
+#top {
+    background-color: black;
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bottom {
+    background-color: green;
+    height: 80%;
+    color: white;
+}
+#right {
+    background-color: red;
+    width: 20%;
+    color: white;
+}
