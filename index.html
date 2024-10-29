@@ -3,111 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maksim Kazakou Site</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Menu w HTML</title>
+    <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
-    <h1>Maksim Kazakou 4Ti</h1>
-    <table>
-        <tr>
-            <th>Liczba</th>
-            <th>Projekt</th>
-            <th>Miniaturka</th>
-            <th>DATA</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td><p><a href="Projekt1.pptx" download>Projekt1</a></p></td>
-            <td><a href="Projekt1.pptx" download><img src="miniaturka1.png" width="300" height="200"></a></td>
-            <td>4.09.2024</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td><p><a href="Projekt2.html">Projekt2</a></p></td>
-            <td><a href="Projekt2.html"><img src="miniaturka2.png" width="200" height="200"></a></td>
-            <td>5.09.2024</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td><p><a href="Projekt3.html">Projekt3</a></p></td>
-            <td><a href="Projekt3.html"><img src="miniaturka3.png" width="250" height="200"></a></td>
-            <td>10.09.2024</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td><p><a href="Projekt5.pptx" download>Projekt5</a></p></td>
-            <td><a href="Projekt5.pptx" download><img src="miniaturka4.png" width="300" height="200"></a></td>
-            <td>12.09.2024</td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td><p><a href="Projekt6.html">Projekt6</a></p></td>
-            <td><a href="Projekt6.html"><img src="miniaturka5.png" width="250" height="200"></a></td>
-            <td>17.09.2024</td>
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td><p><a href="Projekt7.html">Projekt7</a></p></td>
-            <td><a href="Projekt7.html"><img src="miniaturka6.png" width="300" height="200"></a></td>
-            <td>18.09.2024</td>
-        </tr>
-        <tr>
-            <td>7.</td>
-            <td><p><a href="Projekt8.pptx" download>Projekt8</a></p></td>
-            <td><a href="Projekt8.pptx" download><img src="miniaturka7.png" width="300" height="200"></a></td>
-            <td>19.09.2024</td>
-        </tr>
-        <tr>
-            <td>8.</td>
-            <td><p><a href="Projekt9.html">Projekt9</a></p> <p><a href="Projekt9v2.html">Projekt9v2</a></p></td>
-            <td><a href="Projekt9.html"><img src="miniaturka8.png" width="300" height="200"><a href="Projekt9v2.html"><img src="miniaturka9.png" width="300" height="200"></a></td>
-            <td>01.10.2024</td>
-        </tr>
-        <tr>
-            <td>9.</td>
-            <td><p><a href="Projekt10.pptx" download>Projekt10</a></p> <p><a href="przyklad10.html">Przyklad</a></p></td>
-            <td><a href="Projekt10.pptx" download><img src="miniaturka10.png" width="300" height="200"></a> <a href="przyklad10.html"><img src="miniaturka10p.png" width="400" height="100"></a></td>
-            <td>08.10.2024</td>
-        </tr>
-        <tr>
-            <td>10.</td>
-            <td><p><a href="test.html">Semantyka, ułożenie</a></p></td>
-            <td><a href="test.html"><img src="miniaturka_test.png" width="300" height="200"></a></td>
-            <td>10.10.2024</td>
-        </tr>
-        <tr>
-            <td>11.</td>
-            <td><p><a href="Flexbox.pptx" download>Flexbox</a></p>
-            <td><a href="Flexbox.pptx" download><img src="miniaturka_flexbox.png" width="300" height="200"></a>
-            <td>15.10.2024</td>
-        </tr>
-        <tr>
-            <td>12.</td>
-            <td><p><a href="Prezentacja CSS.pptx" download>Selektory, atrybuty, wartości</a></p>
-            <td><a href="Prezentacja CSS.pptx" download><img src="miniaturka_css.png" width="300" height="200"></a>
-            <td>17.10.2024</td>
-        </tr>
-        <tr>
-            <td>13.</td>
-            <td><p><a href="Grid w CSS.pptx" download>Grid w CSS</a></p>
-            <td><a href="Grid w CSS.pptx" download><img src="miniaturka_grid.png" width="300" height="200"></a>
-            <td>22.10.2024</td>
-        </tr>
-    </table>
+    <header>
+        <div class="menu">
+            <div class="menu-item"><a href="index.html">Start</a></div>
+            <div class="menu-item"><a href="Projekts.html">Projekty</a></div>
+            <div class="menu-item"><a href="index.html">Kontakt</a></div>
+        </div>
+        <a href="index.html"><img src="logo_index.png" alt="Logo" class="logo">
+    </header>
+    
+    <main>
+        <section class="about-me">
+            <h1>O mnie</h1>
+            <p>Jestem uczniem w Polsce, który pasjonuje się nauką i technologią. Interesuję się programowaniem oraz nowinkami ze świata IT. W wolnym czasie rozwijam swoje umiejętności i biorę udział w projektach, które pozwalają mi zdobywać nowe doświadczenia.</p>
+        </section>
+    </main>
 </body>
 </html>
