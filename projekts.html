@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maksim Kazakou Site</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #3a5c3a;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #e0ffe0;
-        }
-    </style>
+    <title>Maksim Kazakou</title>
+    <link rel="stylesheet" href="style_projekts.css">
 </head>
 <body>
-    <h1>Projekty</h1>
-    <table>
+    <header>
+        <div class="menu">
+            <div class="menu-item"><a href="index.html">Start</a></div>
+            <div class="menu-item"><a href="projekts.html">Projekty</a></div>
+            <div class="menu-item"><a href="index.html">Kontakt</a></div>
+        </div>
+        <a href="index.html"><img src="logo_index.png" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <h1>Projekty</h1>
+        <section class="table-container">
+        <table>
         <tr>
             <th>Liczba</th>
             <th>Projekt</th>
@@ -115,5 +111,7 @@
             <td>30.10.2024</td>
         </tr>
     </table>
+</section>
+</main>
 </body>
 </html>
