@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURNIEJ MIKOŁAJKOWY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.iplsc.com/polscy-siatkarze-ze-srebrnymi-medalami/000JLP5SRXD115KI-C116-F4.jpeg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 70%;
+            justify-content: space-between;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left-section {
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .left-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .left-section h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .right-section {
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .right-section ul {
+            list-style-type: none;
+        }
+
+        .right-section li {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background-img"></div>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>Mikołajkowy turniej w siatkówkę</h1>
+            <h2>Data turnieju: 19 listopada 2024</h2>
+        </div>
+
+        <div class="right-section">
+            <h3>Skład 4TI</h3>
+            <ul>
+                <li>Antoni Klik</li>
+                <li>Michał Trochynski</li>
+                <li>Daniel Polovko</li>
+                <li>Dobrawa Lipiec</li>
+                <li>Filip Lewandowski</li>
+                <li>Kacper Kruszwicki</li>
+                <li>Anton Komarouski</li>
+                <li>Maksim Kazakou</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
