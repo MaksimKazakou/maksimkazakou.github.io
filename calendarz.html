@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adwentowy Kalendarz Maksim</title>
+  <style>
+    body {
+      background-image: url('https://wallpapers.com/images/hd/cozy-christmas-fu4npu751z19rqv9.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(6, 100px);
+      gap: 10px;
+    }
+
+    .day {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .day:hover {
+      transform: scale(1.1);
+    }
+
+    .day img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .day:hover img {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calendar">
+    <div class="day" data-day="1"><span>1</span><img src="https://ecsmedia.pl/c/kubek-swiateczny-zestaw-prezentowy-prezent-mikolajki-b-iext138780441.jpg" alt="Dzień 1"></div>
+    <div class="day" data-day="2"><span>2</span><img src="https://www.crazyshop.pl/zasoby/images/middle/skarpetki-swiateczne-dla-dzieci-mikolaj-roz31-34_69535.jpg" alt="Dzień 2"></div>
+    <div class="day" data-day="3"><span>3</span><img src="https://hips.hearstapps.com/hmg-prod/images/christmas-gift-box-food-decor-and-fir-tree-branch-royalty-free-image-1694638050.jpg?crop=0.668xw:1.00xh;0.210xw,0&resize=640:*" alt="Dzień 3"></div>
+    <div class="day" data-day="4"><span>4</span><img src="https://ecsmedia.pl/cdn-cgi/image/width=270,height=270,/c/ekoloco-kosz-prezentowy-na-rozne-okazje-wariant-29-b-iext124564383.jpg" alt="Dzień 4"></div>
+    <div class="day" data-day="5"><span>5</span><img src="https://upominkibiznesowe.pl/userdata/public/gfx/148/Zestaw-dla-dzieci-na-Mikolajki-w-worku-prezentowym-slodycze-Milka-Zozole-zelki.jpg" alt="Dzień 5"></div>
+    <div class="day" data-day="6"><span>6</span><img src="https://sklep505411.shoparena.pl/userdata/public/gfx/2135.jpg" alt="Dzień 6"></div>
+    <div class="day" data-day="7"><span>7</span><img src="https://ekoloco.pl/userdata/public/gfx/12728/da63790ca8e6a671be8a1ad150f9e8ce.jpg" alt="Dzień 7"></div>
+    <div class="day" data-day="8"><span>8</span><img src="https://mojagwiazdka.pl/7968-large_default/kredki-upominek-na-mikolajki-dla-dzieci-z-podpisem.jpg" alt="Dzień 8"></div>
+    <div class="day" data-day="9"><span>9</span><img src="https://m.media-amazon.com/images/I/81mnbYfBk0L._AC_UF1000,1000_QL80_.jpg" alt="Dzień 9"></div>
+    <div class="day" data-day="10"><span>10</span><img src="https://mojagwiazdka.pl/9333/kubek-prezent-na-mikolajki-dla-uczniow-z-imieniem-mikolajki-2024.jpg" alt="Dzień 10"></div>
+    <div class="day" data-day="11"><span>11</span><img src="https://www.crazyshop.pl/zasoby/images/crazy/mini/swiateczna-herbata-sypana-na-prezent-od-firmy_70955.jpg" alt="Dzień 11"></div>
+    <div class="day" data-day="12"><span>12</span><img src="https://zamowprezent.pl/userdata/public/gfx/24340/Drewniane-Jojo-z-Grawerem-na-Mikolajki---Prezent--Pod-Choinke---Mikolajki-Pingwinek.jpg" alt="Dzień 12"></div>
+    <div class="day" data-day="13"><span>13</span><img src="https://paxis.pl/wp-content/uploads/2023/10/Pudelko_5B189565D_1200.jpg" alt="Dzień 13"></div>
+    <div class="day" data-day="14"><span>14</span><img src="https://www.decobazaar.com/foto-prod/normal/7013070.jpg" alt="Dzień 14"></div>
+    <div class="day" data-day="15"><span>15</span><img src="https://fajnafabryka.pl/14807-large_default/smycz-BN.jpg" alt="Dzień 15"></div>
+    <div class="day" data-day="16"><span>16</span><img src="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA18362_00/1/i_cd6a177c374f229f9cd8e1164a78d49f78af97820747d480daf8cdd3e965c248/i/icon0.png" alt="Dzień 16"></div>
+    <div class="day" data-day="17"><span>17</span><img src="https://www.crazyshop.pl/zasoby/images/crazy/mini/bombki-swiateczne-alkoholowe_69578.jpg" alt="Dzień 17"></div>
+    <div class="day" data-day="18"><span>18</span><img src="https://polskiprezent.pl/environment/cache/images/500_500_productGfx_12206/1.1.jpg" alt="Dzień 18"></div>
+    <div class="day" data-day="19"><span>19</span><img src="https://idekor.pl/wp-content/uploads/2024/11/Prezent-upominek-koszulka-na-swieta-mikolajki-1.webp" alt="Dzień 19"></div>
+    <div class="day" data-day="20"><span>20</span><img src="https://m.media-amazon.com/images/I/91rhe1SKKYL._AC_UF1000,1000_QL80_.jpg" alt="Dzień 20"></div>
+    <div class="day" data-day="21"><span>21</span><img src="https://gift4.pl/images/products/3036667/1c7e631808b7babdeb65731608ad505c.jpg" alt="Dzień 21"></div>
+    <div class="day" data-day="22"><span>22</span><img src="https://www.e-kwiaty.pl/ekwiaty/_images/c/wf/2185-cwfkxt-tnbsd.jpg" alt="Dzień 22"></div>
+    <div class="day" data-day="23"><span>23</span><img src="https://ecsmedia.pl/cdn-cgi/image/width=270,height=270,/c/prezent-na-swieta-mikolajki-renifer-reniferek-na-lizaka-ozdoba-swiateczna-upominek-b-iext140621193.jpg" alt="Dzień 23"></div>
+    <div class="day" data-day="24"><span>24</span><img src="https://czymzajacmalucha.pl/wp-content/uploads/2018/11/kicia-kocia-kolekcja.jpg" alt="Dzień 24"></div>
+  </div>
+</body>
+</html>
