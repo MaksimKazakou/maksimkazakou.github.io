@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kursy komputerowe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="baner.png" alt="kursy komputerowe">
+  </header>
+
+  <nav>
+    <a href="arkusz1.html">Strona główna</a>
+    <a href="raty.html">Koszt rat</a>
+    <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+  </nav>
+
+  <main>
+    <h3>Oblicz miesięczną ratę</h3>
+
+    <form>
+      <div class="kontrolki">
+        <label><input type="radio" name="kurs" value="react"> Kurs React.js</label><br>
+        <label><input type="radio" name="kurs" value="javascript"> Kurs JavaScript</label>
+      </div>
+
+      <div class="kontrolki">
+        <label>Liczba rat:
+          <input type="number" id="liczbaRat" placeholder="np. 10">
+        </label>
+      </div>
+
+      <div class="kontrolki">
+        <label>Miasto:
+          <select id="miasto">
+            <option>Warszawa</option>
+            <option>Katowice</option>
+            <option>Gdańsk</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="kontrolki">
+        <button type="button" onclick="obliczRate()">Oblicz</button>
+      </div>
+    </form>
+
+    <p id="wynik"></p>
+  </main>
+
+  <footer>
+    <p>Autor strony: Maksim Kazakou</p>
+  </footer>
+
+  <script>
+    function obliczRate() {
+      const kurs = document.querySelector('input[name="kurs"]:checked');
+      const liczbaRat = parseInt(document.getElementById("liczbaRat").value);
+      const miasto = document.getElementById("miasto").value;
+
+      if (!kurs || isNaN(liczbaRat) || liczbaRat <= 0) {
+        document.getElementById("wynik").innerText = "Wybierz kurs i podaj poprawną liczbę rat.";
+        return;
+      }
+
+      let cenaCalkowita = 0;
+      if (kurs.value === "react") {
+        cenaCalkowita = 5000;
+      } else if (kurs.value === "javascript") {
+        cenaCalkowita = 3000;
+      }
+
+      const rata = (cenaCalkowita / liczbaRat).toFixed(2);
+
+      document.getElementById("wynik").innerText =
+        `Kurs odbędzie się w ${miasto}. Koszt całkowity: ${cenaCalkowita} zł. Płacisz ${liczbaRat} rat po ${rata} zł`;
+    }
+  </script>
+</body>
+</html>
