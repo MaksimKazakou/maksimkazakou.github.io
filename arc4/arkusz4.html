@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obuwie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Obuwie męskie</h1>
+    </header>
+
+    <main>
+        <form action="zamow.html" method="get">
+            <label for="model">Model:</label>
+            <select id="model" name="model" class="kontrolka">
+                <option value="but2">TRZEWIKI SZNUROWANE (T02-44)</option>
+                <option value="but1">PÓŁBUTY WIZYTOWE (P-59-03)</option>
+                <option value="but3">TRAMPKI SLIP ON (T03-32)</option>
+            </select>
+
+            <label for="rozmiar">Rozmiar:</label>
+            <select id="rozmiar" name="rozmiar" class="kontrolka">
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+            </select>
+
+            <label for="liczba">Liczba par:</label>
+            <input type="number" id="liczba" name="liczba" class="kontrolka" min="1" required>
+
+            <button type="submit" class="kontrolka">Zamów</button>
+        </form>
+
+        <div class="buty">
+            <img src="but1.png" alt="Półbuty wizytowe" width="100">
+            <h4>PÓŁBUTY WIZYTOWE</h4>
+            <p>Model: P-59-03</p>
+            <h4>Cena: 188.00</h4>
+        </div>
+
+        <div class="buty">
+            <img src="but2.png" alt="Trzewiki sznurowane" width="100">
+            <h4>TRZEWIKI SZNUROWANE</h4>
+            <p>Model: T02-44</p>
+            <h4>Cena: 399.00</h4>
+        </div>
+
+        <div class="buty">
+            <img src="but3.png" alt="Trampki slip on" width="100">
+            <h4>TRAMPKI SLIP ON</h4>
+            <p>Model: T03-32</p>
+            <h4>Cena: 77.99</h4>
+        </div>
+    </main>
+
+    <footer>
+        <p>Autor strony: Maksim Kazakou</p>
+    </footer>
+</body>
+</html>
