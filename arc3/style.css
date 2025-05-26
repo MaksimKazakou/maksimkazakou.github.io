@@ -1,0 +1,68 @@
+body {
+    font-family: Bookman, Serif;
+}
+
+header, footer {
+    background-color: Indigo;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.napis {
+    background-color: BlueViolet;
+    padding: 10px;
+    text-align: right;
+}
+
+main {
+    display: flex;
+}
+
+.lewy, .prawy {
+    background-color: Lavender;
+    height: 500px;
+    padding: 10px;
+}
+
+.lewy {
+    width: 25%;
+}
+
+.srodkowy {
+    background-color: GhostWhite;
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+}
+
+.prawy {
+    width: 35%;
+}
+
+img {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+p {
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+
+table, form {
+    margin: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid Indigo;
+    padding: 3px;
+}
