@@ -1,0 +1,62 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background-color: LightSalmon;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+}
+
+.kontener {
+    display: flex;
+    flex-direction: row;
+}
+
+.lewa-kolumna {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lewy-gora {
+    height: 400px;
+}
+
+.lewy-dol {
+    background-color: DarkSalmon;
+    height: 100px;
+}
+
+.prawy {
+    background-color: DarkSalmon;
+    width: 70%;
+    height: 500px;
+    overflow: auto;
+}
+
+.filtr {
+    font-style: italic;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.filtr:hover {
+    color: GhostWhite;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px dotted Maroon;
+}
+
+td {
+    border: 1px dotted Maroon;
+}
