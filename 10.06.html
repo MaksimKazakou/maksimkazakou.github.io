@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Maksim Kazakou</title>
+  <style>
+    #tekst {
+      padding: 20px;
+      border: 2px solid #333;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .kolorZielony {
+      background-color: #90ee90;
+    }
+
+    .duzyTekst {
+      font-size: 30px;
+    }
+
+    .czcionkaComic {
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Zmiana wygląda diva</h2>
+
+  <div id="tekst">Kliknij przycisk, by zmienić wygląd</div>
+
+  <div>
+    <button onclick="zmienKolor()">Zmień kolor</button>
+    <button onclick="zmienRozmiar()">Zmień rozmiar</button>
+    <button onclick="zmienCzcionke()">Zmień czcionkę</button>
+    <button onclick="resetuj()">Resetuj</button>
+  </div>
+
+  <script>
+    function zmienKolor() {
+      const tekst = document.getElementById("tekst");
+      tekst.classList.add("kolorZielony");
+    }
+
+    function zmienRozmiar() {
+      const tekst = document.getElementById("tekst");
+      tekst.classList.add("duzyTekst");
+    }
+
+    function zmienCzcionke() {
+      const tekst = document.getElementById("tekst");
+      tekst.classList.add("czcionkaComic");
+    }
+
+    function resetuj() {
+      const tekst = document.getElementById("tekst");
+      tekst.classList.remove("kolorZielony", "duzyTekst", "czcionkaComic");
+    }
+  </script>
+
+</body>
+</html>
